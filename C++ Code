@@ -1,0 +1,60 @@
+// { Driver Code Starts
+#include<bits/stdc++.h>
+using namespace std;
+
+
+ // } Driver Code Ends
+
+
+
+class Solution
+{
+    
+    public:
+    //Function to find the maximum occurring character in a string.
+    char getMaxOccuringChar(string str)
+    {
+        int count[26]={0};
+        int index;
+        int maxu=-1;
+        int ans=-1;
+        
+        for(int i=0;i<str.length();i++){
+            if(str[i]>='a' && str[i]<='z'){
+                index=str[i]-'a';
+            }
+            else
+                index=str[i]-'A';
+                
+            count[index]++;
+        }
+        
+        for(int j=0;j<26;j++){
+            if(count[j]>maxu){
+                maxu=count[j];
+                ans=j;
+            }
+        }
+        char n='a'+ans;
+    return n;    
+    
+        
+    }
+
+};
+
+// { Driver Code Starts.
+
+int main()
+{
+   
+    int t;
+    cin >> t;
+    while(t--)
+    {
+        string str;
+        cin >> str;
+    	  Solution obj;
+        cout<< obj.getMaxOccuringChar(str)<<endl;
+    }
+}  // } Driver Code Ends
