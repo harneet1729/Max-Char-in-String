@@ -1,7 +1,7 @@
 # Max-Char-in-String
 A basic DSA Question to find Maximum Occurring Character in a string
 
-Here we need to find the Character with maximum frequency. If more than 1 character has maximum frequency then we will return the character that occurs first in lexicographical ordering.
+Here we need to find the Character with maximum frequency. If more than 1 character has maximum frequency then we will return the character that occurs first in lexicographical ordering. Upper and Lower Case are considered the same character.
 
 eg input - "abhdkhkbdk"
 output - k
